@@ -6,7 +6,9 @@ jobs:
     steps:
       - name: Checkout
       - uses: actions/checkout@v2
+      - name: Setup_Python
       - uses: actions/setup-python@v2
+      - name: Setup_CML
       - uses: iterative/setup-cml@v1
       - name: Train model
         env:
