@@ -12,7 +12,7 @@ from keras.utils import np_utils
 def read_data():
     all_data = []
     for name in ['train', 'test', 'validate']:
-        all_data.append(pd.read_csv(f'data/apps_{name}.csv', header=0))
+        all_data.append(pd.read_csv(f'apps_{name}.csv', header=0))
     return all_data
 
 train_set, test_set, validate_set = read_data()
